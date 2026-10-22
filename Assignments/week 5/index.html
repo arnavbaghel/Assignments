@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Page</title>
+    <style>
+        * {
+            margin: 8px;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            padding: var(--gap);
+        }
+
+        .heading {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border-radius: 7px;
+
+        }
+
+        #text {
+            position: relative;
+            bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ccd;
+        }
+
+        input {
+            padding: 6px;
+            margin: 4px 0;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: 0;
+            padding: 10px 18px;
+            border-radius: 6px;
+           font-size: 17px;
+           cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+
+
+
+        <h1>Coding Club</h1><br>
+        <div id="text">
+            <p>Learn. Build. Share</p>
+
+        </div>
+    </div>
+
+    <h2>Upcoming Events</h2>
+    <table border="1px">
+        <th>Event</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <tr>
+            <td>HTML Workshop</td>
+            <td>12 Nov</td>
+            <td>Lab 1</td>
+        </tr>
+        <tr>
+            <td>Hackathon</td>
+            <td>20 Nov</td>
+            <td>Seminar Hall</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Events: 2</td>
+        </tr>
+    </table>
+    <h2>Register</h2>
+    <label for="name">Name: </label> <input type="text" name="name" id="name"><br>
+    <label for="email">Email: </label> <input type="email" name="email" id="email"><br>
+    <button>Register</button>
+
+
+
+
+</body>
+
+</html>
