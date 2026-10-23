@@ -16,6 +16,7 @@
             font-family: Arial, sans-serif;
             background: #eef2f8;
         }
+
         .layout {
             display: grid;
             grid-template-columns: 170px 1fr;
@@ -59,11 +60,13 @@
         aside li {
             margin: 8px 0 8px 18px;
         }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 12px;
         }
+
         .item {
             display: flex;
             align-items: center;
@@ -76,6 +79,12 @@
         .icon {
             font-size: 28px;
         }
+
+        a {
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -87,9 +96,15 @@
         <aside>
             <h3>Menu</h3>
             <ul>
-                <li>Home</li>
-                <li>Reports</li>
-                <li>Settings</li>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Reports</li>
+                </a>
+                <a href="#">
+                    <li>Settings</li>
+                </a>
             </ul>
         </aside>
         <main>
@@ -117,4 +132,5 @@
         <footer>Made with CSS Grid</footer>
     </div>
 </body>
+
 </html
